@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Neucha|Rokkitt&display=swap" rel="stylesheet">
+ <style>
+  html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+   .alert{
+     text-align: center;
+     padding: 10px;
+     background: #79c879;
+     color: #fff;
+     margin-bottom: 10px;
+     display: none;
+   }
+   #contactForm{
+    margin-top: 20px;
+    padding: 50px;
+    background: rgb(199, 253, 217);
+    box-shadow: blue;
+   }
+   #contactForm input
+   {
+     margin:20px;
+   }
+ 
+   
+ </style>
+    
+    <title>Contact form</title>
+</head>
+
+<body>
+
+<div class="container text-center">
+  <h1> <b>Contact us</b></h1><br><br>
+  <div class="alert">Your Message has been sent</div>
+  <form id="contactForm">
+  <div class="row">
+    <div class="col-sm-6">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required>
+    </div>
+    <div class="col-sm-6">
+      <label for="name">Company</label>
+      <input type="text" name="company" id="company">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <label for="name">Email</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div class="col-sm-6">
+      <label for="name">Number</label>
+      <input type="text" name="phone" id="phone">
+    </div>
+  </div>
+  <div class="row">
+    <label for="message">Message</label>
+    <textarea name="message" cols="40" rows="5" id="message"></textarea>
+  </div>
+  <button type="submit">submit</button>
+</form>
+</div>
+
+
+
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
